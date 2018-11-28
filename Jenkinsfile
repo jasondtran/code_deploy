@@ -4,7 +4,7 @@ pipeline {
       stage('Build') {
         steps {
           awsCodeBuild projectName: 'code-deploy-reinvent',
-                       credentialsId: 'codebuild',
+                       credentialsId: 'codebuid',
                        credentialsType: 'jenkins',
                        region: 'us-east-2',
                        sourceControlType: 'project'
